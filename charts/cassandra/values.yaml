@@ -23,7 +23,7 @@ persistence:
   ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
   ##   GKE, AWS & OpenStack)
   ##
-  # storageClass: "-"
+  storageClass: "efs-sc"
   accessMode: ReadWriteOnce
   size: 10Gi
 
@@ -115,7 +115,7 @@ updateStrategy:
 
 ## Pod Security Context
 securityContext:
-  enabled: false
+  enabled: true
   fsGroup: 999
   runAsUser: 999
 

@@ -75,7 +75,7 @@ affinity: {}
 
 persistence:
   enabled: true
-  # storageClass: "-"
+  storageClass: "efs-sc"
   accessMode: ReadWriteOnce
   size: 1Gi
 
