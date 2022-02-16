@@ -4,7 +4,7 @@ This chart will install the apache atlas and used solr for indexing and cassandr
 To install the chart. clone the repo and run following command to install chart
 
 ```sh
-helm install --name <any release name> -f atlas-helm-chart/values.yaml atlas-helm-chart
+helm install <any release name> -f values.yaml .
 ```
 This will run the solr, atlas, Cassandra and zookeeper pods
 
