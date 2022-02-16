@@ -3,6 +3,8 @@ ERROR: Warning  FailedCreate  14m (x832 over 9d)  statefulset-controller  create
 REASON: Volume is not being binded
 SOLUTION: Statefulset => 
 ```
+$ kubectl get statefulsets
+$ kubectl describe statefulset atlas-cassandra
 $ kubectl get sc
 - Use "efs-sc"
 change in values.yaml -> 
